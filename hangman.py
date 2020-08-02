@@ -69,7 +69,6 @@ class Hangman:
         self.canvas.config(bg='orange')
         self.value = True
         self.word = self.rw.random_word()
-        print(self.word)
         self.canvas.delete(ALL)
         self.canvas.pack()
         self.canvas.create_line(100, 100, 100, 200)
