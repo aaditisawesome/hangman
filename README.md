@@ -4,5 +4,6 @@ Then, clone this repository by typing `git clone git@github.com:aaditisawesome/h
 
 # Game Play
 Play the game by typing `python hangman.py`
-A tkinter window should open on your screen
+A tkinter window should open on your screen.
+
 Have Fun playing!
