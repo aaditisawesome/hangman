@@ -124,9 +124,7 @@ class Hangman:
                     else:
                         txt = txt + letter + ' '
                 if '_' not in txt:
-                #if len(word) == len(correct_letters):
                     print('Yay you did it! It was '+self.word+'!') 
-                    
                     self.canvas.itemconfig(self.status_text, text='YAY YOU GOT IT! You time was ' + self.format())
                     self.canvas.configure(bg='green')
                     self.button.config(text="New Game", command= self.new_game)
