@@ -166,5 +166,5 @@ class Hangman:
 
 hangman1 = Hangman()
 hangman1.new_game()
+hangman1.root.mainloop()
 
-input()
