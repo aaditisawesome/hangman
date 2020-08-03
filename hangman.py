@@ -22,6 +22,7 @@ class Hangman:
         self.status_text = self.canvas.create_text(150, 275, text=' ')
         self.stopwatch_state = True
         self.stopwatch_counter = 0
+        self.alphabet = 'abcdefghijklmnopqrstuvwxys'
 
     # end __init__
 
@@ -109,7 +110,9 @@ class Hangman:
             guess = self.entry.get().lower()
             self.entry.delete(0, len(guess))
             # guess = raw_input('What letter is you guess? ')
-            if len(guess) != 1:
+            if guess not in self.alphabet:
+                self.canvas.itemconfig(self.status_text, text='You guess must be in the alphabet!')
+            elif len(guess) != 1:
                 self.canvas.itemconfig(self.status_text, text='You are only allowed to put 1 letter!')
             elif guess in self.correct_letters:
                 self.canvas.itemconfig(self.status_text, text='You already got this letter correct!') 
