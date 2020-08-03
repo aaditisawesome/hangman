@@ -1,3 +1,4 @@
+# Copyrighted by Aadit Bansal
 from tkinter import *
 from random_words import RandomWords
 import time
