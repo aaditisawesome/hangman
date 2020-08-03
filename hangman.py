@@ -119,7 +119,6 @@ class Hangman:
             elif guess in self.wrong_letters:
                 self.canvas.itemconfig(self.status_text, text='You already got this letter wrong!')
             elif guess in self.word:
-                print('IT IS IN THE WORD!')
                 self.correct_letters = self.correct_letters + [guess]
                 for letter in self.word:
                     if letter not in self.correct_letters:
@@ -127,7 +126,6 @@ class Hangman:
                     else:
                         txt = txt + letter + ' '
                 if '_' not in txt:
-                    print('Yay you did it! It was '+self.word+'!') 
                     self.canvas.itemconfig(self.status_text, text='YAY YOU GOT IT! You time was ' + self.format())
                     self.canvas.configure(bg='green')
                     self.button.config(text="New Game", command= self.new_game)
@@ -142,7 +140,6 @@ class Hangman:
                     self.canvas.after(250, change_color_orange)
                 self.canvasT(txt)
             else:
-                print("Sorry, that letter isn't in the word")
                 self.wrong_letters = self.wrong_letters + [guess]
                 for letter in self.wrong_letters:
                     txt2 = txt2 + letter + ' '
@@ -150,7 +147,6 @@ class Hangman:
                 self.hangman()
                 self.canvas.configure(bg = 'red')
                 if len(self.wrong_letters) == 9:
-                    print('You lost :(. The word was '+self.word+'.')
                     self.canvas.itemconfig(self.status_text,  text='You lost :( The word was "'+self.word+'",\n  and your time was ' + self.format() + '.') 
                     self.canvas.configure(bg='red')
                     self.button.config(text="New Game", command=self.new_game)
