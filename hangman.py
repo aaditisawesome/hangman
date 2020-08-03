@@ -2,7 +2,6 @@
 from tkinter import *
 from random_words import RandomWords
 import time
-import threading
 class Hangman:
     def __init__(self):
         self.root = Tk()
