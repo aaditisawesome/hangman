@@ -1,6 +1,7 @@
 # Installation
-First, install `RandomWords` by typing `pip install RandomWords`
-Then, clone this repository by typing `git clone git@github.com:aaditisawesome/hangman.git`
+Open `Terminal` on your computer. 
+Then, install `RandomWords` by typing `pip install RandomWords`. 
+Finally, clone this repository by typing `git clone git@github.com:aaditisawesome/hangman.git` or by typing `git clone https://github.com/aaditisawesome/hangman.git`
 
 # Opening up the game
 Play the game by typing `python hangman.py`
