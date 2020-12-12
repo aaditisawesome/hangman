@@ -21,7 +21,7 @@ class Hangman:
         self.status_text = self.canvas.create_text(150, 275, text=' ')
         self.stopwatch_state = True
         self.stopwatch_counter = 0
-        self.alphabet = 'abcdefghijklmnopqrstuvwxys'
+        self.alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
     # end __init__
 
