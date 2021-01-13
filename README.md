@@ -4,7 +4,7 @@ Then, install `RandomWords` by typing `pip install RandomWords`.
 Finally, clone this repository by typing `git clone git@github.com:aaditisawesome/hangman.git` or by typing `git clone https://github.com/aaditisawesome/hangman.git`
 
 # Opening up the game
-Play the game by typing `python hangman.py`
+Play the game by typing `cd hangman`, and then `python hangman.py` in terminal
 A tkinter window should open on your screen.
 
 Have Fun playing!
