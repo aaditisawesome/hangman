@@ -1,10 +1,16 @@
 # Installation
-Open `Terminal` on your computer. 
-Then, install `RandomWords` by typing `pip install RandomWords`. 
-Finally, clone this repository by typing `git clone git@github.com:aaditisawesome/hangman.git` or by typing `git clone https://github.com/aaditisawesome/hangman.git`
+Install `AaditsHangman` with `pip install AaditsHangman`. 
+This will install the module, and will also install other dependencies that this module needs.
 
 # Opening up the game
-Play the game by typing `cd hangman`, and then `python hangman.py` in terminal
+Play the game by opening up some editor (or ig typing `python` in terminal also works)  
+Then type this following code:
+```py
+from AaditsHangman import Hangman
+
+hangman = Hangman()
+hangman.new_game()
+```
 A tkinter window should open on your screen.
 
 Have Fun playing!
