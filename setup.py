@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="AaditsHangman", # Replace with your own username
-    version="0.0.2",
+    version="0.0.3",
     author="Aadit Bansal",
     author_email="aaditisawesome@gmail.com",
     description="A hangman game created on tkinter python",

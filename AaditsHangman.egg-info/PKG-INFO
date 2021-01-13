@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: AaditsHangman
-Version: 0.0.2
+Version: 0.0.3
 Summary: A hangman game created on tkinter python
 Home-page: https://github.com/aaditisawesome/hangman
 Author: Aadit Bansal
@@ -12,7 +12,7 @@ Description: # Installation
         Finally, clone this repository by typing `git clone git@github.com:aaditisawesome/hangman.git` or by typing `git clone https://github.com/aaditisawesome/hangman.git`
         
         # Opening up the game
-        Play the game by typing `python hangman.py`
+        Play the game by typing `cd hangman`, and then `python hangman.py` in terminal
         A tkinter window should open on your screen.
         
         Have Fun playing!
